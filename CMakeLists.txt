@@ -25,3 +25,15 @@ ADD_EXECUTABLE(testAwardsCeremony
 
 TARGET_LINK_LIBRARIES(testAwardsCeremony gtest)
 TARGET_LINK_LIBRARIES(testAwardsCeremony gmock)
+ADD_EXECUTABLE(testHailstone
+  test/testHailstone.cpp
+  lib/Hailstone.cpp
+)
+
+TARGET_LINK_LIBRARIES(testHailstone gtest)
+add_executable(testTriangle
+  test/testTri.cpp
+  lib/Triangle.cpp
+)
+
+target_link_libraries(testTriangle gtest)

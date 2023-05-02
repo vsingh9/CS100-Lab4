@@ -11,6 +11,8 @@ lib/libgmock_main.a
 lib/libgtest.a
 lib/libgtest_main.a
 lib/libsimpleLibrary.a
+test/CMakeCache.txt
 test/CMakeFiles/
 test/Makefile
 test/cmake_install.cmake
+test/lib/
