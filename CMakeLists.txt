@@ -24,3 +24,9 @@ ADD_EXECUTABLE(testHailstone
 )
 
 TARGET_LINK_LIBRARIES(testHailstone gtest)
+add_executable(testTriangle
+  test/testTri.cpp
+  lib/Triangle.cpp
+)
+
+target_link_libraries(testTriangle gtest)
