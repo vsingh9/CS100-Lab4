@@ -19,7 +19,7 @@ add_subdirectory(lib)
 add_subdirectory(test)
 
 ADD_EXECUTABLE(testHailstone
-  test/test.cpp
+  test/testHailstone.cpp
   lib/Hailstone.cpp
 )
 
