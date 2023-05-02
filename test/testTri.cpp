@@ -53,7 +53,7 @@ TEST(TriangleTests, testNegativeSideLengths) {
     EXPECT_DEATH (new Triangle(-4, -3, -2), "First side is not the longest");
 }
 
-int main (int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
+// int main (int argc, char **argv) {
+//     ::testing::InitGoogleTest(&argc, argv);
+//     return RUN_ALL_TESTS();
+// }

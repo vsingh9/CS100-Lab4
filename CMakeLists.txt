@@ -18,22 +18,22 @@ include_directories(
 add_subdirectory(lib)
 add_subdirectory(test)
 
-ADD_EXECUTABLE(testAwardsCeremony
-  test/awardTests.cpp
-  lib/Awards.cpp
-)
+# ADD_EXECUTABLE(testAwardsCeremony
+#   test/awardTests.cpp
+#   lib/Awards.cpp
+# )
 
-TARGET_LINK_LIBRARIES(testAwardsCeremony gtest)
-TARGET_LINK_LIBRARIES(testAwardsCeremony gmock)
-ADD_EXECUTABLE(testHailstone
-  test/testHailstone.cpp
-  lib/Hailstone.cpp
-)
+# TARGET_LINK_LIBRARIES(testAwardsCeremony gtest)
+# TARGET_LINK_LIBRARIES(testAwardsCeremony gmock)
+# ADD_EXECUTABLE(testHailstone
+#   test/testHailstone.cpp
+#   lib/Hailstone.cpp
+# )
 
-TARGET_LINK_LIBRARIES(testHailstone gtest)
-add_executable(testTriangle
-  test/testTri.cpp
-  lib/Triangle.cpp
-)
+# TARGET_LINK_LIBRARIES(testHailstone gtest)
+# add_executable(testTriangle
+#   test/testTri.cpp
+#   lib/Triangle.cpp
+# )
 
-target_link_libraries(testTriangle gtest)
+# target_link_libraries(testTriangle gtest)
