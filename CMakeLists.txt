@@ -18,3 +18,9 @@ include_directories(
 add_subdirectory(lib)
 add_subdirectory(test)
 
+add_executable(testTriangle
+  test/testTri.cpp
+  lib/Triangle.cpp
+)
+
+target_link_libraries(testTriangle gtest)
