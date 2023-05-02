@@ -18,6 +18,12 @@ include_directories(
 add_subdirectory(lib)
 add_subdirectory(test)
 
+ADD_EXECUTABLE(testHailstone
+  test/test.cpp
+  lib/Hailstone.cpp
+)
+
+TARGET_LINK_LIBRARIES(testHailstone gtest)
 add_executable(testTriangle
   test/testTri.cpp
   lib/Triangle.cpp
