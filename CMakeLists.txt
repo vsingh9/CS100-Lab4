@@ -18,8 +18,15 @@ include_directories(
 add_subdirectory(lib)
 add_subdirectory(test)
 
+ADD_EXECUTABLE(testAwardsCeremony
+  test/awardTests.cpp
+  lib/Awards.cpp
+)
+
+TARGET_LINK_LIBRARIES(testAwardsCeremony gtest)
+TARGET_LINK_LIBRARIES(testAwardsCeremony gmock)
 ADD_EXECUTABLE(testHailstone
-  test/test.cpp
+  test/testHailstone.cpp
   lib/Hailstone.cpp
 )
 
