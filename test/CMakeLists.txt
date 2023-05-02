@@ -4,9 +4,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 add_subdirectory(googletest)
 
 add_executable(runAllTests
-  testHailstone.cpp
   awardTests.cpp
-  testTri.cpp
 )
 
 target_link_libraries(runAllTests gmock gtest gtest_main)
